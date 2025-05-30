@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Production Company</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Visual Impact studios</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-social">
+            <input type="text" placeholder="Search...">
+            <div class="social-icons">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Visual Impact studios</h1>
+        <p>Your gateway to cinematic excellence.</p>
+        <a href="VisualLogin.html" class="cta-button">Watch Now</a>
+    </section>
+
+    <!-- Display greeting message -->
+    <section class="greeting">
+        <?php
+        if (isset($_GET['greeting'])) {
+            echo "<h2>" . htmlspecialchars($_GET['greeting']) . "</h2>";
+        }
+        ?>
+    </section>
+
+    <section class="featured-films">
+        <h2>Featured Films</h2>
+        <div class="film-grid">
+            <div class="film-card">
+                <img src="leo.jpg" alt="Film 1">
+                <h3>Leo</h3>
+                <p> Director: kaNagaraj
+                    Release Date: October 19 2023</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="film-card">
+                <img src="goat.jpg" alt="Film 2">
+                <h3>Greatest Of All Time</h3>
+                <p> Director: Vimal Prabhu 
+                    Release Date: September 5 2024</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="film-card">
+                <img src="ill.jpg" alt="Film 3">
+                <h3>Illusion</h3>
+                <p> Director: Nagaraj Muruganandam
+                    Release Date: December 2024</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="film-card">
+                <img src="vid.avif" alt="Film 4">
+                <h3>Viduthalai 2</h3>
+                <p> Director: Vimal Maaran 
+                    Release Date: December 20, 2024</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Visual Impact studios. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+    <script src="animatemain.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f; /* Darker header background */
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00; /* Accent color for logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffcc00; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff; /* Lighter color on hover */
+}
+
+.search-social {
+    display: flex;
+    align-items: center;
+}
+
+.search-social input {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333; /* Input background */
+    color: #fff; /* Input text color */
+}
+
+.search-social input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+.social-icons a {
+    margin-left: 10px;
+    color: #ffcc00; /* Accent color for social icons */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff; /* Lighter color on hover */
+}
+
+.hero {
+    background: url('vis\ bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #ffcc00; /* Accent color for button */
+    color: #333;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #e0b800; /* Darker shade on hover */
+}
+
+.featured-films {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-films h2 {
+    margin-bottom: 20px;
+    color: #ffcc00; /* Accent color for section title */
+}
+
+.film-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.film-card {
+    background: #1f1f1f; /* Dark card background */
+    border: 1px solid #333; /* Card border */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.3s;
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateX(-50px); /* Start slightly off-screen to the left */
+}
+
+.film-card.show {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Move to original position */
+}
+
+/* Hover effect */
+.film-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.film-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.film-card h3 {
+    margin: 10px 0;
+    color: #ffcc00; /* Accent color for film title */
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffcc00; /* Accent color for learn more link */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.learn-more:hover {
+    color: #fff; /* Lighter color on hover */
+}

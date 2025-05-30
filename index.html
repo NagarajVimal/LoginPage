@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Welcome to Visual Impact Studios</h1>
+
+    <!-- Display a greeting if the user is logged in -->
+    <?php
+    if (isset($_GET['greeting'])) {
+        echo "<h2>" . htmlspecialchars($_GET['greeting']) . "</h2>";
+    }
+    ?>
+
+    <a href="Visuallogin.html">Login</a> | <a href="register.html">Register</a>
+</body>
+</html>
